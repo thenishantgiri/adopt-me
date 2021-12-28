@@ -1,10 +1,13 @@
 import { useState } from "react";
 
-const ANIMALS = Object.freeze(["bird", "cat", "dog", "rabbit", "reptile"]);
+const ANIMALS = Object.freeze(["Bird", "Cat", "Dog", "Rabbit", "Reptile"]);
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
   const [animal, setAnimal] = useState("");
+  const [breed, setBreed] = useState("");
+
+  const breeds = ["Havanese", "Cockatiel"];
 
   return (
     <div className="search-params">
@@ -35,6 +38,26 @@ const SearchParams = () => {
               return (
                 <option value={animal} key={animal}>
                   {animal}
+                </option>
+              );
+            })}
+          </select>
+        </label>
+
+        <label htmlFor="breed">
+          Breed
+          <select
+            id="breed"
+            value={breed}
+            onChange={(e) => setBreed(e.target.value)}
+            onBlur={(e) => setBreed(e.target.value)}
+            placeholder="Breed"
+          >
+            <option />
+            {breeds.map((breed) => {
+              return (
+                <option value={breed} key={breed}>
+                  {breed}
                 </option>
               );
             })}
