@@ -1,0 +1,23 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenishantgiri/adopt-me.git"
+  },
+  "keywords": [],
+  "author": "Nishant Kumar Giri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenishantgiri/adopt-me/issues"
+  },
+  "homepage": "https://github.com/thenishantgiri/adopt-me#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
