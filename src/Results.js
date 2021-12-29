@@ -10,7 +10,7 @@ const Results = ({ pets }) => {
           return (
             <Pet
               name={pet.name}
-              animal={pet.animal}
+              animal={pet.animal.charAt(0).toUpperCase() + pet.animal.slice(1)}
               breed={pet.breed}
               key={pet.id}
               images={pet.images}
