@@ -1,8 +1,9 @@
-import { StrictMode, useState } from "react";
+import {StrictMode, useState} from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import SearchParams from "./SearchParams";
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+
 import Details from "./Details";
+import SearchParams from "./SearchParams";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
