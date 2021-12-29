@@ -1,25 +1,26 @@
-import { useState, useEffect, useContext } from "react";
+import {useContext, useEffect, useState} from "react";
+
+import Results from "./Results";
 import ThemeContext from "./ThemeContext";
 import useBreedList from "./useBreedList";
-import Results from "./Results";
 
-const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
+const ANIMALS = [ "bird", "cat", "dog", "rabbit", "reptile" ];
 const THEME = [
   {
-    name: "Blizzard Blue",
-    hex: "#B0DDF2",
+    name : "Blizzard Blue",
+    hex : "#B0DDF2",
   },
   {
-    name: "Bubble Gum",
-    hex: "#FFC6C6",
+    name : "Bubble Gum",
+    hex : "#FFC6C6",
   },
   {
-    name: "Blond",
-    hex: "#FFEDBB",
+    name : "Blond",
+    hex : "#FFEDBB",
   },
   {
-    name: "Shampoo",
-    hex: "#FFCDF7",
+    name : "Shampoo",
+    hex : "#FFCDF7",
   },
 ];
 
